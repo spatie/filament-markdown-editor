@@ -2,7 +2,6 @@
 
 namespace Spatie\FilamentMarkdownField;
 
-use Spatie\FilamentMarkdownField\Commands\FilamentMarkdownFieldCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
