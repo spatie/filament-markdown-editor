@@ -1,6 +1,6 @@
 <?php
 
-// config for Spatie/A markdown field for Filament
+// config for Spatie/FilamentMarkdownField
 return [
 
 ];

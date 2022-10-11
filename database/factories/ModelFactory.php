@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\A markdown field for Filament\Database\Factories;
+namespace Spatie\FilamentMarkdownField\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

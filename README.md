@@ -52,8 +52,8 @@ php artisan vendor:publish --tag="filament-markdown-field-views"
 ## Usage
 
 ```php
-$a markdown field for Filament = new Spatie\A markdown field for Filament();
-echo $a markdown field for Filament->echoPhrase('Hello, Spatie!');
+$FilamentMarkdownField = new Spatie\FilamentMarkdownField();
+echo $FilamentMarkdownField->echoPhrase('Hello, Spatie!');
 ```
 
 ## Testing

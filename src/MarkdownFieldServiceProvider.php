@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\A markdown field for Filament;
+namespace Spatie\FilamentMarkdownField;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Spatie\A markdown field for Filament\Commands\A markdown field for FilamentCommand;
+use Spatie\FilamentMarkdownField\Commands\FilamentMarkdownFieldCommand;
 
-class A markdown field for FilamentServiceProvider extends PackageServiceProvider
+class MarkdownFieldServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -20,6 +20,6 @@ class A markdown field for FilamentServiceProvider extends PackageServiceProvide
             ->hasConfigFile()
             ->hasViews()
             ->hasMigration('create_filament-markdown-field_table')
-            ->hasCommand(A markdown field for FilamentCommand::class);
+            ->hasCommand(FilamentMarkdownFieldCommand::class);
     }
 }

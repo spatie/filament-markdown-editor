@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\A markdown field for Filament\\": "src",
-            "Spatie\\A markdown field for Filament\\Database\\Factories\\": "database/factories"
+            "Spatie\\FilamentMarkdownField\\": "src",
+            "Spatie\\FilamentMarkdownField\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\A markdown field for Filament\\Tests\\": "tests"
+            "Spatie\\FilamentMarkdownField\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -56,10 +56,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\A markdown field for Filament\\A markdown field for FilamentServiceProvider"
+                "Spatie\\FilamentMarkdownField\\FilamentMarkdownFieldServiceProvider"
             ],
             "aliases": {
-                "A markdown field for Filament": "Spatie\\A markdown field for Filament\\Facades\\A markdown field for Filament"
+                "FilamentMarkdownField": "Spatie\\FilamentMarkdownField\\Facades\\FilamentMarkdownField"
             }
         }
     },
