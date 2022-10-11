@@ -21,7 +21,7 @@
             };
         }
 
-        window.init = function () {
+        window.initMarkdownEditor = function () {
             let editor = new EasyMDE({
                 autoDownloadFontAwesome: false,
                 element: this.$refs.editor,
@@ -94,19 +94,11 @@
         }
     </script>
 
-    {{--
-    @if($label ?? null)
-        <label class="{{ ($required ?? false) ? 'label label-required' : 'label' }} -mb-4" for="{{ $name }}">
-            {{ $label }}
-        </label>
-    @endif
-    --}}
-    @php($wireModelAttribute = collect($attributes)->first(fn (string $value, string $attribute) => str_starts_with($attribute, 'wire:model')))
     <div wire:ignore
          x-data="{
             markdown: @entangle($getStatePath()),
-            init: init,
+            init: initMarkdownEditor,
         }">
-        <textarea x-ref="editor" data-dirty-check></textarea>
+        <textarea x-ref="editor"></textarea>
     </div>
 </x-forms::field-wrapper>
