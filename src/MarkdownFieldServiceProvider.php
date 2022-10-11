@@ -20,6 +20,7 @@ class MarkdownFieldServiceProvider extends PackageServiceProvider
     public function bootingPackage()
     {
         Filament::registerScripts([
+
             url('vendor/filament-markdown-field/editor.js'),
         ]);
 
