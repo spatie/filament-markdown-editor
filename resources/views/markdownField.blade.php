@@ -221,7 +221,7 @@
             @php($wireModelAttribute = collect($attributes)->first(fn (string $value, string $attribute) => str_starts_with($attribute, 'wire:model')))
             <div class="markup markup-editor markup-lists markup-links markup-code"
                  wire:ignore x-data="{
-            markdown: @entangle($getStatePath),
+            markdown: @entangle($getStatePath()),
             init: init,
         }">
                 <textarea x-ref="editor" data-dirty-check></textarea>
