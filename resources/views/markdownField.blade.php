@@ -1,7 +1,7 @@
-@push('endHead')
+@once
     {{-- <script src="{{ asset('vendor/mailcoach-markdown-editor/editor.js') }}" defer></script>--}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
-@endpush
+@endonce
 
 <x-forms::field-wrapper
     :id="$getId()"
@@ -211,11 +211,13 @@
                 }
             </script>
 
+            {{--
             @if($label ?? null)
                 <label class="{{ ($required ?? false) ? 'label label-required' : 'label' }} -mb-4" for="{{ $name }}">
                     {{ $label }}
                 </label>
             @endif
+            --}}
             @php($wireModelAttribute = collect($attributes)->first(fn (string $value, string $attribute) => str_starts_with($attribute, 'wire:model')))
             <div class="markup markup-editor markup-lists markup-links markup-code"
                  wire:ignore x-data="{
@@ -226,5 +228,4 @@
             </div>
         </div>
     </div>
-    >
 </x-forms::field-wrapper>
