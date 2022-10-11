@@ -1,22 +1,19 @@
 {
-    "name": "@spatie/filament-markdown-field",
-    "version": "0.0.1",
+    "name": "laravel-mailcoach-markdown-editor",
     "scripts": {
-        "bundle": "microbundle -i resources/js/editor.js -o resources/dist/editor.js -f cjs --no-sourcemap --external none --define process.env.NODE_ENV='production'",
-        "format": "prettier --write 'resources/**/*.{css,js,ts,tsx}'",
-        "typecheck": "tsc -w --preserveWatchOutput"
+        "dev": "npx mix",
+        "build": "npx mix --production"
     },
-    "devDependencies": {
-        "microbundle": "^0.14.2",
+    "dependencies": {
         "codemirror": "^5.65.8",
         "husky": "^7.0.4",
         "lint-staged": "^11.0.0",
         "prettier": "^2.5.0",
-        "typescript": "^4.2.4"
+        "typescript": "^4.2.4",
+        "vite": "^2.2.4"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged && yarn bundle-temp && git add resources/compiled/editor.js && git add resources/compiled/editor.css"
-        }
+    "devDependencies": {
+        "laravel-mix": "^6.0.49",
+        "laravel-vite-plugin": "^0.5.4"
     }
 }

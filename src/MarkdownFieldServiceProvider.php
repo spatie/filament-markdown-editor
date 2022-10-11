@@ -20,8 +20,12 @@ class MarkdownFieldServiceProvider extends PackageServiceProvider
     public function bootingPackage()
     {
         Filament::registerScripts([
-
             url('vendor/filament-markdown-field/editor.js'),
+        ], true);
+
+        Filament::registerStyles([
+            'https://pro.fontawesome.com/releases/v5.15.4/css/all.css',
+            'https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css',
         ]);
     }
 }
