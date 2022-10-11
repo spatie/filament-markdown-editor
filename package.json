@@ -8,6 +8,7 @@
     },
     "dependencies": {
         "microbundle": "^0.14.2",
+        "codemirror": "^5.65.8",
         "husky": "^7.0.4",
         "lint-staged": "^11.0.0",
         "prettier": "^2.5.0",
