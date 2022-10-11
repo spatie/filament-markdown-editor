@@ -23,7 +23,5 @@ class MarkdownFieldServiceProvider extends PackageServiceProvider
 
             url('vendor/filament-markdown-field/editor.js'),
         ]);
-
-
     }
 }
