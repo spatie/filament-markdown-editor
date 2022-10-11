@@ -143,7 +143,7 @@
                         autoDownloadFontAwesome: false,
                         element: this.$refs.editor,
                         uploadImage: true,
-                        placeholder: '{{ __mc('Start writing…') }}',
+                        placeholder: '{{ __('Start writing…') }}',
                         initialValue: this.markdown,
                         spellChecker: false,
                         autoSave: false,
