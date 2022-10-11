@@ -10,10 +10,6 @@
     :required="$isRequired()"
     :state-path="$getStatePath()"
 >
-    <div
-        wire:model.lazy="{{ $getStatePath() }}"
-    >
-
         <div class="form-grid">
             <script>
                 function debounce(func, timeout = 300) {
@@ -115,5 +111,4 @@
                 <textarea x-ref="editor" data-dirty-check></textarea>
             </div>
         </div>
-    </div>
 </x-forms::field-wrapper>
