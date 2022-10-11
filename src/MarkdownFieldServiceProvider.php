@@ -13,13 +13,16 @@ class MarkdownFieldServiceProvider extends PackageServiceProvider
         $package
             ->name('filament-markdown-field')
             ->hasConfigFile()
+            ->hasAssets()
             ->hasViews();
     }
 
     public function bootingPackage()
     {
         Filament::registerScripts([
-            __DIR__ . '../resources/js/editor.js',
+            url('vendor/filament-markdown-field/editor.js'),
         ]);
+
+
     }
 }

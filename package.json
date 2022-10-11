@@ -1,0 +1,21 @@
+{
+    "name": "@spatie/filament-markdown-field",
+    "version": "0.0.1",
+    "scripts": {
+        "bundle": "microbundle -i resources/js/editor.js -o resources/dist/editor.js --generateTypes false --no-sourcemap --external none --define process.env.NODE_ENV='production'",
+        "format": "prettier --write 'resources/**/*.{css,js,ts,tsx}'",
+        "typecheck": "tsc -w --preserveWatchOutput"
+    },
+    "dependencies": {
+        "microbundle": "^0.14.2",
+        "husky": "^7.0.4",
+        "lint-staged": "^11.0.0",
+        "prettier": "^2.5.0",
+        "typescript": "^4.2.4"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged && yarn bundle-temp && git add resources/compiled/editor.js && git add resources/compiled/editor.css"
+        }
+    }
+}

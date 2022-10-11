@@ -5,7 +5,6 @@ require('codemirror/addon/edit/continuelist');
 require('codemirror/addon/display/placeholder');
 require('codemirror/addon/selection/mark-selection');
 require('codemirror/addon/search/searchcursor');
-
 require('codemirror/mode/clike/clike');
 require('codemirror/mode/cmake/cmake');
 require('codemirror/mode/css/css');
