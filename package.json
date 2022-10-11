@@ -2,7 +2,7 @@
     "name": "@spatie/filament-markdown-field",
     "version": "0.0.1",
     "scripts": {
-        "bundle": "microbundle -i resources/js/editor.js -o resources/dist/editor.js --generateTypes false --no-sourcemap --external none --define process.env.NODE_ENV='production'",
+        "bundle": "microbundle -i  resources/js/editor.js -o resources/dist/editor.js --generateTypes false -f cjs --no-sourcemap --external none --define process.env.NODE_ENV='production'",
         "format": "prettier --write 'resources/**/*.{css,js,ts,tsx}'",
         "typecheck": "tsc -w --preserveWatchOutput"
     },
