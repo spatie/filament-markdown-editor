@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Spatie\A markdown field for Filament\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class A markdown field for FilamentCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-markdown-field';
 
     public $description = 'My command';
 
