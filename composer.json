@@ -57,11 +57,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\FilamentMarkdownField\\FilamentMarkdownFieldServiceProvider"
-            ],
-            "aliases": {
-                "FilamentMarkdownField": "Spatie\\FilamentMarkdownField\\Facades\\FilamentMarkdownField"
-            }
+                "Spatie\\FilamentMarkdownField\\MarkdownFieldServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
