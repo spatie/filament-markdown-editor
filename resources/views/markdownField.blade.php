@@ -124,9 +124,9 @@
     </script>
 
     <div wire:ignore
+         x-init="initMarkdownEditor"
          x-data="{
-            markdown: @entangle($getStatePath()),
-            init: initMarkdownEditor,
+            markdown: @entangle($getStatePath())
         }">
         <textarea x-ref="editor"></textarea>
     </div>
