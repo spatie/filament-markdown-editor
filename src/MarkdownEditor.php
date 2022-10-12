@@ -1,17 +1,17 @@
 <?php
 
-namespace Spatie\FilamentMarkdownField;
+namespace Spatie\FilamentMarkdownEditor;
 
 use Filament\Forms\Components\Concerns;
 use Filament\Forms\Components\Contracts;
 use Filament\Forms\Components\Field;
 
-class MarkdownField extends Field implements Contracts\HasFileAttachments
+class MarkdownEditor extends Field implements Contracts\HasFileAttachments
 {
     use Concerns\HasFileAttachments;
     use Concerns\InteractsWithToolbarButtons;
 
-    protected string $view = 'filament-markdown-field::markdownField';
+    protected string $view = 'filament-markdown-editor::markdownField';
 
     protected array | Closure $toolbarButtons = [
         'heading',

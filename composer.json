@@ -1,12 +1,12 @@
 {
-    "name": "spatie/filament-markdown-field",
-    "description": "This is my package filament-markdown-field",
+    "name": "spatie/filament-markdown-editor",
+    "description": "A markdown editor for Filament with code highlighting and image uploads",
     "keywords": [
         "spatie",
         "laravel",
-        "filament-markdown-field"
+        "filament-markdown-editor"
     ],
-    "homepage": "https://github.com/spatie/filament-markdown-field",
+    "homepage": "https://github.com/spatie/filament-markdown-editor",
     "license": "MIT",
     "authors": [
         {
@@ -41,13 +41,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\FilamentMarkdownField\\": "src",
-            "Spatie\\FilamentMarkdownField\\Database\\Factories\\": "database/factories"
+            "Spatie\\FilamentMarkdownEditor\\": "src",
+            "Spatie\\FilamentMarkdownEditor\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\FilamentMarkdownField\\Tests\\": "tests"
+            "Spatie\\FilamentMarkdownEditor\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -67,7 +67,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\FilamentMarkdownField\\MarkdownFieldServiceProvider"
+                "MarkdownEditorServiceProvider"
             ]
         }
     },

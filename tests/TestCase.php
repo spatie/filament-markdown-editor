@@ -1,16 +1,16 @@
 <?php
 
-namespace Spatie\FilamentMarkdownField\Tests;
+namespace Spatie\FilamentMarkdownEditor\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\FilamentMarkdownField\MarkdownFieldServiceProvider;
+use Spatie\FilamentMarkdownEditor\MarkdownEditorServiceProvider;
 
 class TestCase extends Orchestra
 {
     protected function getPackageProviders($app)
     {
         return [
-            MarkdownFieldServiceProvider::class,
+            MarkdownEditorServiceProvider::class,
         ];
     }
 }

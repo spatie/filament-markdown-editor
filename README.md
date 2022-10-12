@@ -1,15 +1,15 @@
 # A markdown editor with code highlighting for Filament
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/filament-markdown-field.svg?style=flat-square)](https://packagist.org/packages/spatie/filament-markdown-field)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/filament-markdown-field/run-tests?label=tests)](https://github.com/spatie/filament-markdown-field/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/spatie/filament-markdown-field/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/spatie/filament-markdown-field/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/filament-markdown-field.svg?style=flat-square)](https://packagist.org/packages/spatie/filament-markdown-field)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/filament-markdown-editor.svg?style=flat-square)](https://packagist.org/packages/spatie/filament-markdown-editor)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/filament-markdown-editor/run-tests?label=tests)](https://github.com/spatie/filament-markdown-editor/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/spatie/filament-markdown-editor/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/spatie/filament-markdown-editor/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/spatie/filament-markdown-editor.svg?style=flat-square)](https://packagist.org/packages/spatie/filament-markdown-editor)
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
 ## Support us
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/filament-markdown-field.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/filament-markdown-field)
+[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/filament-markdown-editor.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/filament-markdown-editor)
 
 We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
 
@@ -20,20 +20,20 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 You can install the package via composer:
 
 ```bash
-composer require spatie/filament-markdown-field
+composer require spatie/filament-markdown-editor
 ```
 
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag="filament-markdown-field-migrations"
+php artisan vendor:publish --tag="filament-markdown-editor-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="filament-markdown-field-config"
+php artisan vendor:publish --tag="filament-markdown-editor-config"
 ```
 
 This is the contents of the published config file:
@@ -46,14 +46,14 @@ return [
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag="filament-markdown-field-views"
+php artisan vendor:publish --tag="filament-markdown-editor-views"
 ```
 
 ## Usage
 
 ```php
-$FilamentMarkdownField = new Spatie\FilamentMarkdownField();
-echo $FilamentMarkdownField->echoPhrase('Hello, Spatie!');
+$FilamentMarkdownEditor = new Spatie\FilamentMarkdownEditor();
+echo $FilamentMarkdownEditor->echoPhrase('Hello, Spatie!');
 ```
 
 ## Testing

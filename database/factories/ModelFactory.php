@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\FilamentMarkdownField\Database\Factories;
+namespace Spatie\FilamentMarkdownEditor\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

@@ -1,18 +1,17 @@
 <?php
 
-namespace Spatie\FilamentMarkdownField;
+namespace Spatie\FilamentMarkdownEditor;
 
 use Filament\Facades\Filament;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class MarkdownFieldServiceProvider extends PackageServiceProvider
+class MarkdownEditorServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('filament-markdown-field')
-            ->hasConfigFile()
+            ->name('filament-markdown-editor')
             ->hasAssets()
             ->hasViews();
     }
@@ -20,7 +19,7 @@ class MarkdownFieldServiceProvider extends PackageServiceProvider
     public function bootingPackage()
     {
         Filament::registerScripts([
-            'markdown-field' => __DIR__.'/../resources/dist/editor.js',
+            'spatie-markdown-editor' => __DIR__.'/../resources/dist/editor.js',
         ], true);
 
         Filament::registerStyles([

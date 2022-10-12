@@ -1,5 +1,5 @@
 <?php
 
-use Spatie\FilamentMarkdownField\Tests\TestCase;
+use Spatie\FilamentMarkdownEditor\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);
