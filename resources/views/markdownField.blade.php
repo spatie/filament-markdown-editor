@@ -23,14 +23,14 @@
     </script>
 
     <div
-        x-data="{ state: $wire.entangle('{{ $getStatePath() }}').defer }"
+        x-data="{ state: $wire.{{ $applyStateBindingModifiers('entangle(\'' . $getStatePath() . '\')') }} }"
         x-init="
             editor = new EasyMDE({
                 autoDownloadFontAwesome: false,
                 element: $refs.editor,
                 uploadImage: true,
                 placeholder: @js(__('Start writing…')),
-                initialValue: this.state,
+                initialValue: state ?? '',
                 spellChecker: false,
                 autoSave: false,
                 status: [{
@@ -78,9 +78,16 @@
             });
 
             editor.codemirror.on('change', debounce(() => {
-                this.markdown = editor.value();
-                $refs.editor.dirty = true;
+                state = editor.value();
             }));
+
+            $watch('state', () => {
+                if (editor.codemirror.hasFocus()) {
+                    return;
+                }
+
+                editor.value(state ?? '');
+            });
         "
         wire:ignore
     >
