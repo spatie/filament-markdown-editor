@@ -52,9 +52,9 @@
                         title: "Redo",
                     },
                 ],
-                {{--
                     imageAccept: 'image/png, image/jpeg, image/gif, image/avif',
                     imageUploadFunction: function(file, onSuccess, onError) {
+                        {{--
                         if (file.size > 1024 * 1024 * 2) {
                             return onError('File cannot be larger than 2MB.');
                         }
@@ -62,7 +62,37 @@
                         if (file.type.split('/')[0] !== 'image') {
                             return onError('File must be an image.');
                         }
+                        --}}
 
+
+                        $wire.upload(`componentFileAttachments.{{ $getStatePath() }}`, attachment.file, () => {
+                            if (! url) {
+                                return
+                            }
+
+                            alert('file uploaded to ' + url);
+
+                            {{--
+                            $refs.imageTrigger.click()
+
+                            const urlStart = $refs.textarea.selectionStart + 2
+                            const urlEnd = urlStart + 3
+
+                            state = [
+                                $refs.textarea.value.substring(0, urlStart),
+                                url,
+                                $refs.textarea.value.substring(urlEnd)
+                            ].join('')
+
+                            $refs.textarea.selectionStart = urlStart - 2
+                            $refs.textarea.selectionEnd = urlStart - 2
+
+                            render()
+
+                            --}}
+                        })
+
+                        {{--
                         const data = new FormData();
                         data.append('file', file);
 
@@ -82,9 +112,8 @@
 
                                 onSuccess(file.url);
                             });
-                    },
-
                     --}}
+                    },
             });
 
             editor.codemirror.on("change", debounce(() => {
