@@ -20,7 +20,7 @@ class MarkdownFieldServiceProvider extends PackageServiceProvider
     public function bootingPackage()
     {
         Filament::registerScripts([
-            'markdown-field' => __DIR__ . '/../resources/dist/editor.js',
+            'markdown-field' => __DIR__.'/../resources/dist/editor.js',
         ], true);
 
         Filament::registerStyles([
