@@ -10,6 +10,16 @@
     "license": "MIT",
     "authors": [
         {
+            "name": "Rias Van der Veken",
+            "email": "rias@spatie.be",
+            "role": "Developer"
+        },
+        {
+            "name": "Dan Harrin",
+            "email": "dan@danharrin.com",
+            "role": "Developer"
+        },
+        {
             "name": "Freek Van der Herten",
             "email": "freek@spatie.be",
             "role": "Developer"

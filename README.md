@@ -76,6 +76,8 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
+- [Rias Van der Veken](https://github.com/riasvdv)
+- [Dan Harrin](https://github.com/danharrin)
 - [Freek Van der Herten](https://github.com/freekmurze)
 - [All Contributors](../../contributors)
 
