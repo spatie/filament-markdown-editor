@@ -67,7 +67,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "MarkdownEditorServiceProvider"
+                "Spatie\\FilamentMarkdownEditor\\MarkdownEditorServiceProvider"
             ]
         }
     },
