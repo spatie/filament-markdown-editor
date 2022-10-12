@@ -2,6 +2,7 @@
 
 namespace Spatie\FilamentMarkdownEditor;
 
+use Closure;
 use Filament\Forms\Components\Concerns;
 use Filament\Forms\Components\Contracts;
 use Filament\Forms\Components\Field;
