@@ -38,22 +38,48 @@
                     defaultValue: ''
                 }],
                 toolbar: [
-                    'heading', 'bold', 'italic', 'link',
-                    '|',
-                    'quote', 'unordered-list', 'ordered-list', 'table',
-                    '|',
+                @if($hasToolbarButton('heading'))
+                    'heading',
+                @endif
+                @if($hasToolbarButton('bold'))
+                    'bold',
+                @endif
+                @if($hasToolbarButton('italic'))
+                    'italic',
+                @endif
+                @if($hasToolbarButton('link'))
+                    'link',
+                @endif
+                @if($hasToolbarButton('quote'))
+                    'quote',
+                @endif
+                @if($hasToolbarButton('unordered-list'))
+                    'unordered-list',
+                @endif
+                @if($hasToolbarButton('ordered-list'))
+                    'ordered-list',
+                @endif
+                @if($hasToolbarButton('ordered-list'))
+                    'table',
+                @endif
+                @if($hasToolbarButton('upload-image'))
                     {
                         name: 'upload-image',
                         action: EasyMDE.drawUploadedImage,
                         className: 'fa fa-image',
                     },
+                @endif
+                @if($hasToolbarButton('undo'))
                     'undo',
+                @endif
+                @if($hasToolbarButton('undo'))
                     { // When FontAwesome is not auto downloaded, this loads the correct icon
                         name: 'redo',
                         action: EasyMDE.redo,
                         className: 'fa fa-redo',
                         title: 'Redo',
                     },
+                @endif
                 ],
                 imageAccept: 'image/png, image/jpeg, image/gif, image/avif',
                 imageUploadFunction: function(file, onSuccess, onError) {
