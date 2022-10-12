@@ -123,11 +123,21 @@
         }
     </script>
 
-    <div wire:ignore
-         x-init="initMarkdownEditor"
-         x-data="{
-            markdown: @entangle($getStatePath())
-        }">
-        <textarea x-ref="editor"></textarea>
+    <div
+        x-data="{ state: $wire.entangle('{{ $getStatePath() }}').defer }"
+        x-init="
+            editor = new EasyMDE({ element: $refs.textarea })
+            editor.value(state ?? '')
+            editor.codemirror.on('change', () => state = editor.value())
+            $watch('state', () => {
+                if (editor.codemirror.hasFocus()) {
+                    return
+                }
+                editor.value(state ?? '')
+            })
+        "
+        wire:ignore
+    >
+        <textarea x-ref="textarea"></textarea>
     </div>
 </x-forms::field-wrapper>
