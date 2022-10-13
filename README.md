@@ -7,6 +7,9 @@
 
 This package contains a Markdown editor form field to be used in [Filament](https://filamentphp.com). The editor supports image uploads and will automatically highlight code snippets.
 
+![screenshot](https://github.com/spatie/filament-markdown-editor/blob/main/docs/editor.jpg?raw=true)
+
+The Markdown field is powered by [EasyMDE](https://easy-markdown-editor.tk).
 
 ## Support us
 
@@ -24,37 +27,27 @@ You can install the package via composer:
 composer require spatie/filament-markdown-editor
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="filament-markdown-editor-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="filament-markdown-editor-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="filament-markdown-editor-views"
-```
-
 ## Usage
 
+In the `form` function of your Filament resource, you can use make use of the `Spatie\FilamentMarkdownEditor\MarkdownEditor` just like any other form element.
+
+Optionally, you can tack on the standard Filament methods `fileAttachmentsDisk`, `fileAttachmentsVisibility`, ... to configure the image uploads.
+
 ```php
-$FilamentMarkdownEditor = new Spatie\FilamentMarkdownEditor();
-echo $FilamentMarkdownEditor->echoPhrase('Hello, Spatie!');
+use Spatie\FilamentMarkdownEditor\MarkdownEditor;
+
+public static function form(Form $form): Form
+{
+    return $form
+        ->schema([
+            // other fields ...
+
+            MarkdownEditor::make('text')
+                ->fileAttachmentsDisk('admin-uploads')
+                ->fileAttachmentsVisibility('public')
+                ->required(),
+        ]);
+}
 ```
 
 ## Testing
