@@ -3,7 +3,6 @@
 namespace Spatie\FilamentMarkdownEditor\Tests\TestSupport;
 
 use Filament\Forms;
-use Illuminate\Contracts\View\View;
 use Livewire\Component;
 use Spatie\FilamentMarkdownEditor\MarkdownEditor;
 
