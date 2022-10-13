@@ -1,13 +1,8 @@
 <?php
 
-use Filament\Forms\ComponentContainer;
-use Spatie\FilamentMarkdownEditor\MarkdownEditor;
-use Spatie\FilamentMarkdownEditor\Tests\TestSupport\Livewire;
+use Livewire\Livewire;
+use Spatie\FilamentMarkdownEditor\Tests\TestSupport\TestFormComponent;
 
 it('can render the component', function () {
-    $container = ComponentContainer::make(Livewire::make());
-
-    $renderedEditor = (string) MarkdownEditor::make('my-editor')->container($container)->render();
-
-    expect($renderedEditor)->toBeString();
+    Livewire::test(TestFormComponent::class)->assertSeeHtml('editor');
 });
