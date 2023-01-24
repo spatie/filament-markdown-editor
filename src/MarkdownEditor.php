@@ -14,7 +14,7 @@ class MarkdownEditor extends Field implements Contracts\HasFileAttachments
 
     protected string $view = 'filament-markdown-editor::markdownField';
 
-    protected array | Closure $toolbarButtons = [
+    protected array|Closure $toolbarButtons = [
         'heading',
         'bold',
         'italic',
