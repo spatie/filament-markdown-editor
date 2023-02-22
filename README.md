@@ -9,7 +9,7 @@ This package contains a Markdown editor form field to be used in [Filament](http
 
 ![screenshot](https://github.com/spatie/filament-markdown-editor/blob/main/docs/editor.jpg?raw=true)
 
-The Markdown field is powered by [EasyMDE](https://easy-markdown-editor.tk).
+The Markdown field is powered by [EasyMDE](https://github.com/Ionaru/easy-markdown-editor).
 
 ## Support us
 
