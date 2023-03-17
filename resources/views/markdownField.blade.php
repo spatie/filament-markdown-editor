@@ -103,12 +103,12 @@
                 },
             });
             
-            // "Create Link (Ctrl-K)": highlight URL instead of label:
+            // 'Create Link (Ctrl-K)': highlight URL instead of label:
             editor.codemirror.on('changes', (instance, changes) => {
                 try {
                     // Grab the last change from the buffered list. I assume the
                     // buffered one ('changes', instead of 'change') is more efficient,
-                    // and that "Create Link" will always end up last in the list.
+                    // and that 'Create Link' will always end up last in the list.
                     const lastChange = changes[changes.length - 1];
                     if (lastChange.origin === '+input') {
                         // https://github.com/Ionaru/easy-markdown-editor/blob/8fa54c496f98621d5f45f57577ce630bee8c41ee/src/js/easymde.js#L765
