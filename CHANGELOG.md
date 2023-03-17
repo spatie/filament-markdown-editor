@@ -2,6 +2,21 @@
 
 All notable changes to `filament-markdown-editor` will be documented in this file.
 
+## 1.1.0 - 2023-03-17
+
+### What's Changed
+
+- Bump dependabot/fetch-metadata from 1.3.5 to 1.3.6 by @dependabot in https://github.com/spatie/filament-markdown-editor/pull/7
+- Malicious site by @Fot0n in https://github.com/spatie/filament-markdown-editor/pull/8
+- CMD+K should select http placeholder instead of text by @riasvdv in https://github.com/spatie/filament-markdown-editor/pull/9
+
+### New Contributors
+
+- @Fot0n made their first contribution in https://github.com/spatie/filament-markdown-editor/pull/8
+- @riasvdv made their first contribution in https://github.com/spatie/filament-markdown-editor/pull/9
+
+**Full Changelog**: https://github.com/spatie/filament-markdown-editor/compare/1.0.1...1.1.0
+
 ## 1.0.1 - 2023-01-24
 
 - add support for L10
