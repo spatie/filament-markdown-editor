@@ -2,6 +2,12 @@
 
 All notable changes to `filament-markdown-editor` will be documented in this file.
 
+## 1.1.1 - 2023-03-17
+
+- Fix double quotes causing issues
+
+**Full Changelog**: https://github.com/spatie/filament-markdown-editor/compare/1.1.0...1.1.1
+
 ## 1.1.0 - 2023-03-17
 
 ### What's Changed
