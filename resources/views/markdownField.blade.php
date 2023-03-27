@@ -29,7 +29,7 @@
                 autoDownloadFontAwesome: false,
                 element: $refs.editor,
                 uploadImage: true,
-                placeholder: @js(__('Start writing…')),
+                placeholder: @js(__($getPlaceholder() ?? 'Start writing…')),
                 initialValue: state ?? '',
                 spellChecker: false,
                 autoSave: false,
