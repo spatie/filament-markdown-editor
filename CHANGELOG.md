@@ -2,6 +2,19 @@
 
 All notable changes to `filament-markdown-editor` will be documented in this file.
 
+## 1.2.0 - 2023-03-27
+
+### What's Changed
+
+- Bump aglipanci/laravel-pint-action from 2.1.0 to 2.2.0 by @dependabot in https://github.com/spatie/filament-markdown-editor/pull/10
+- Add placeholder ability by @ashleyhindle in https://github.com/spatie/filament-markdown-editor/pull/11
+
+### New Contributors
+
+- @ashleyhindle made their first contribution in https://github.com/spatie/filament-markdown-editor/pull/11
+
+**Full Changelog**: https://github.com/spatie/filament-markdown-editor/compare/1.1.1...1.2.0
+
 ## 1.1.1 - 2023-03-17
 
 - Fix double quotes causing issues
