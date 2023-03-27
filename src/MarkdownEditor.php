@@ -10,6 +10,7 @@ use Filament\Forms\Components\Field;
 class MarkdownEditor extends Field implements Contracts\HasFileAttachments
 {
     use Concerns\HasFileAttachments;
+    use Concerns\HasPlaceholder;
     use Concerns\InteractsWithToolbarButtons;
 
     protected string $view = 'filament-markdown-editor::markdownField';
