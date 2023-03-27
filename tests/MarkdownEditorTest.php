@@ -1,7 +1,6 @@
 <?php
 
 use Livewire\Livewire;
-use Spatie\FilamentMarkdownEditor\MarkdownEditor;
 use Spatie\FilamentMarkdownEditor\Tests\TestSupport\TestFormComponent;
 use Spatie\FilamentMarkdownEditor\Tests\TestSupport\TestFormPlaceholderComponent;
 
