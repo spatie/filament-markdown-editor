@@ -59,7 +59,7 @@
                 @if($hasToolbarButton('ordered-list'))
                     'ordered-list',
                 @endif
-                @if($hasToolbarButton('ordered-list'))
+                @if($hasToolbarButton('table'))
                     'table',
                 @endif
                 @if($hasToolbarButton('upload-image'))
