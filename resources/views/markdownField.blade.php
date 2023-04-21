@@ -59,7 +59,7 @@
                 @if($hasToolbarButton('ordered-list'))
                     'ordered-list',
                 @endif
-                @if($hasToolbarButton('ordered-list'))
+                @if($hasToolbarButton('table'))
                     'table',
                 @endif
                 @if($hasToolbarButton('upload-image'))
@@ -72,7 +72,7 @@
                 @if($hasToolbarButton('undo'))
                     'undo',
                 @endif
-                @if($hasToolbarButton('undo'))
+                @if($hasToolbarButton('redo'))
                     { // When FontAwesome is not auto downloaded, this loads the correct icon
                         name: 'redo',
                         action: EasyMDE.redo,
