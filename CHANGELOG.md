@@ -2,6 +2,19 @@
 
 All notable changes to `filament-markdown-editor` will be documented in this file.
 
+## 1.2.1 - 2023-04-21
+
+### What's Changed
+
+- Bump dependabot/fetch-metadata from 1.3.6 to 1.4.0 by @dependabot in https://github.com/spatie/filament-markdown-editor/pull/12
+- Fixed the rendering of 2 toolbar buttons by @dinandmentink in https://github.com/spatie/filament-markdown-editor/pull/13
+
+### New Contributors
+
+- @dinandmentink made their first contribution in https://github.com/spatie/filament-markdown-editor/pull/13
+
+**Full Changelog**: https://github.com/spatie/filament-markdown-editor/compare/1.2.0...1.2.1
+
 ## 1.2.0 - 2023-03-27
 
 ### What's Changed
