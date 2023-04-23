@@ -25,7 +25,8 @@
     <div
         x-data="{ state: $wire.{{ $applyStateBindingModifiers('entangle(\'' . $getStatePath() . '\')') }} }"
         x-init="
-            editor = new EasyMDE({
+            window.SpatieMarkdownFields = window.SpatieMarkdownFields || {};
+            window.SpatieMarkdownFields['{{$getStatePath()}}'] = new EasyMDE({
                 autoDownloadFontAwesome: false,
                 element: $refs.editor,
                 uploadImage: true,
@@ -102,9 +103,9 @@
                     });
                 },
             });
-            
+
             // 'Create Link (Ctrl-K)': highlight URL instead of label:
-            editor.codemirror.on('changes', (instance, changes) => {
+            window.SpatieMarkdownFields['{{$getStatePath()}}'].codemirror.on('changes', (instance, changes) => {
                 try {
                     // Grab the last change from the buffered list. I assume the
                     // buffered one ('changes', instead of 'change') is more efficient,
@@ -138,16 +139,16 @@
                 }
             });
 
-            editor.codemirror.on('change', debounce(() => {
-                state = editor.value();
+            window.SpatieMarkdownFields['{{$getStatePath()}}'].codemirror.on('change', debounce(() => {
+                state = window.SpatieMarkdownFields['{{$getStatePath()}}'].value();
             }));
 
             $watch('state', () => {
-                if (editor.codemirror.hasFocus()) {
+                if (window.SpatieMarkdownFields['{{$getStatePath()}}'].codemirror.hasFocus()) {
                     return;
                 }
 
-                editor.value(state ?? '');
+                window.SpatieMarkdownFields['{{$getStatePath()}}'].value(state ?? '');
             });
         "
         wire:ignore
