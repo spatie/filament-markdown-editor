@@ -2,6 +2,18 @@
 
 All notable changes to `filament-markdown-editor` will be documented in this file.
 
+## 1.2.2 - 2023-04-24
+
+### What's Changed
+
+- Allow multiple editors on same page by @JamesHemery in https://github.com/spatie/filament-markdown-editor/pull/14
+
+### New Contributors
+
+- @JamesHemery made their first contribution in https://github.com/spatie/filament-markdown-editor/pull/14
+
+**Full Changelog**: https://github.com/spatie/filament-markdown-editor/compare/1.2.1...1.2.2
+
 ## 1.2.1 - 2023-04-21
 
 ### What's Changed
