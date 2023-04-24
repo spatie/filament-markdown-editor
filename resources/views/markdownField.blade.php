@@ -23,7 +23,7 @@
     </script>
 
     <div
-        x-data="{ state: $wire.{{ $applyStateBindingModifiers('entangle(\'' . $getStatePath() . '\')') }} }"
+        x-data="{ state: $wire.{{ $applyStateBindingModifiers('entangle(\'' . $getStatePath() . '\')') }}, editor: null }"
         x-init="
             editor = new EasyMDE({
                 autoDownloadFontAwesome: false,
