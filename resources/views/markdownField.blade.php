@@ -147,7 +147,7 @@
                     return;
                 }
 
-                editor.value(state ?? '');
+                editor.value(state ?? null);
             });
         "
         wire:ignore
