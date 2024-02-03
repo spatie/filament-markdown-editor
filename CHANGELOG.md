@@ -2,6 +2,21 @@
 
 All notable changes to `filament-markdown-editor` will be documented in this file.
 
+## 1.2.3 - 2024-02-03
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 1.4.0 to 1.5.0 by @dependabot in https://github.com/spatie/filament-markdown-editor/pull/15
+* Bump aglipanci/laravel-pint-action from 2.2.0 to 2.3.0 by @dependabot in https://github.com/spatie/filament-markdown-editor/pull/16
+* Bump dependabot/fetch-metadata from 1.5.0 to 1.5.1 by @dependabot in https://github.com/spatie/filament-markdown-editor/pull/17
+* Bump dependabot/fetch-metadata from 1.5.1 to 1.6.0 by @dependabot in https://github.com/spatie/filament-markdown-editor/pull/18
+* Bump actions/checkout from 3 to 4 by @dependabot in https://github.com/spatie/filament-markdown-editor/pull/19
+* Bump aglipanci/laravel-pint-action from 2.3.0 to 2.3.1 by @dependabot in https://github.com/spatie/filament-markdown-editor/pull/22
+* Bump stefanzweifel/git-auto-commit-action from 4 to 5 by @dependabot in https://github.com/spatie/filament-markdown-editor/pull/21
+* Fix issue where field is persisted after deleting a block by @dinandmentink in https://github.com/spatie/filament-markdown-editor/pull/23
+
+**Full Changelog**: https://github.com/spatie/filament-markdown-editor/compare/1.2.2...1.2.3
+
 ## 1.2.2 - 2023-04-24
 
 ### What's Changed
