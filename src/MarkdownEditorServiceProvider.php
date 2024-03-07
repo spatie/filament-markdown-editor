@@ -5,6 +5,9 @@ namespace Spatie\FilamentMarkdownEditor;
 use Filament\Facades\Filament;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Filament\Support\Assets\Js;
+use Filament\Support\Assets\Css;
+use Filament\Support\Facades\FilamentAsset;
 
 class MarkdownEditorServiceProvider extends PackageServiceProvider
 {
@@ -16,16 +19,13 @@ class MarkdownEditorServiceProvider extends PackageServiceProvider
             ->hasViews();
     }
 
-    public function bootingPackage()
+    public function bootingPackage(): void
     {
-        Filament::registerScripts([
-            'spatie-markdown-editor' => __DIR__.'/../resources/dist/editor.js',
-        ], true);
-
-        Filament::registerStyles([
-            'https://pro.fontawesome.com/releases/v5.15.4/css/all.css',
-            'https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css',
-            'spatie-markdown-editor' => __DIR__.'/../resources/css/editor.css',
+        FilamentAsset::register([
+            Js::make('spatie-markdown-editor', __DIR__.'/../resources/dist/editor.js'),
+            Css::make('https://pro.fontawesome.com/releases/v5.15.4/css/all.css'),
+            Css::make('https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css'),
+            Css::make('spatie-markdown-editor', __DIR__.'/../resources/css/editor.css')
         ]);
     }
 }
