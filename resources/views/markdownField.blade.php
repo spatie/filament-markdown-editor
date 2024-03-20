@@ -1,4 +1,4 @@
-<x-forms::field-wrapper
+<x-filament-forms::field-wrapper
     :id="$getId()"
     :label="$getLabel()"
     :label-sr-only="$isLabelHidden()"
@@ -154,4 +154,4 @@
     >
         <textarea x-ref="editor"></textarea>
     </div>
-</x-forms::field-wrapper>
+</x-filament-forms::field-wrapper>
