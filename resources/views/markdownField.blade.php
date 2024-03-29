@@ -13,6 +13,7 @@
 
     <x-filament::input.wrapper>
         <div
+            class="spatie-filament-markdown-editor"
             x-data="{ state: $wire.{{ $applyStateBindingModifiers('entangle(\'' . $getStatePath() . '\')') }}, editor: null }"
             x-init="
                 editor = new EasyMDE({

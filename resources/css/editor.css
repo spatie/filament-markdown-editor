@@ -41,3 +41,11 @@
 .cm-attribute {color: #00c;}
 .cm-hr {color: #999;}
 .cm-link {color: #00c;}
+
+/* Remove the .EasyMDEContainer button mask images set by filament in favour of font awesome icons */
+.spatie-filament-markdown-editor .EasyMDEContainer .editor-toolbar button::before {
+    mask: unset;
+    width: unset;
+    height: unset;
+    background: unset;
+}
