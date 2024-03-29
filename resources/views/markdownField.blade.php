@@ -91,7 +91,7 @@
                     }
 
                     $wire.upload(`componentFileAttachments.{{ $getStatePath() }}`, file, () => {
-                        $wire.getComponentFileAttachmentUrl('{{ $getStatePath() }}').then((url) => {
+                        $wire.getFormComponentFileAttachmentUrl('{{ $getStatePath() }}').then((url) => {
                             if (! url) {
                                 return onError('File could not be uploaded');
                             }
