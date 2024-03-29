@@ -41,12 +41,3 @@
 .cm-attribute {color: #00c;}
 .cm-hr {color: #999;}
 .cm-link {color: #00c;}
-
-.EasyMDEContainer {
-    padding-top: 1px;
-}
-
-.EasyMDEContainer .editor-toolbar {
-    border-top: 1px solid #ced4da;
-    border-bottom: 1px solid #ced4da;
-}
