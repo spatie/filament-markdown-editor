@@ -2,6 +2,14 @@
 
 All notable changes to `filament-markdown-editor` will be documented in this file.
 
+## 2.0.0 - 2024-04-01
+
+### What's Changed
+
+* Filament v3 support - drop filament v2 support - add laravel v11 support by @dinandmentink in https://github.com/spatie/filament-markdown-editor/pull/28
+
+**Full Changelog**: https://github.com/spatie/filament-markdown-editor/compare/1.2.3...2.0.0
+
 ## 1.2.3 - 2024-02-03
 
 ### What's Changed
