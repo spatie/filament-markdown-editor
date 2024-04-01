@@ -1,8 +1,7 @@
 # A markdown editor with code highlighting for Filament
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/filament-markdown-editor.svg?style=flat-square)](https://packagist.org/packages/spatie/filament-markdown-editor)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/filament-markdown-editor/run-tests?label=tests)](https://github.com/spatie/filament-markdown-editor/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/spatie/filament-markdown-editor/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/spatie/filament-markdown-editor/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![run-tests](https://github.com/spatie/filament-markdown-editor/actions/workflows/run-tests.yml/badge.svg)](https://github.com/spatie/filament-markdown-editor/actions/workflows/run-tests.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/filament-markdown-editor.svg?style=flat-square)](https://packagist.org/packages/spatie/filament-markdown-editor)
 
 This package contains a Markdown editor form field to be used in [Filament](https://filamentphp.com). The editor supports image uploads and will automatically highlight code snippets.
