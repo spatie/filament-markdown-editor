@@ -2,6 +2,24 @@
 
 All notable changes to `filament-markdown-editor` will be documented in this file.
 
+## 2.0.1 - 2025-02-21
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 1.6.0 to 2.0.0 by @dependabot in https://github.com/spatie/filament-markdown-editor/pull/27
+* Bump aglipanci/laravel-pint-action from 2.3.1 to 2.4 by @dependabot in https://github.com/spatie/filament-markdown-editor/pull/29
+* Bump dependabot/fetch-metadata from 2.0.0 to 2.1.0 by @dependabot in https://github.com/spatie/filament-markdown-editor/pull/30
+* Bump dependabot/fetch-metadata from 2.1.0 to 2.2.0 by @dependabot in https://github.com/spatie/filament-markdown-editor/pull/31
+* Bump dependabot/fetch-metadata from 2.2.0 to 2.3.0 by @dependabot in https://github.com/spatie/filament-markdown-editor/pull/32
+* Bump aglipanci/laravel-pint-action from 2.4 to 2.5 by @dependabot in https://github.com/spatie/filament-markdown-editor/pull/33
+* Laravel 12.x Compatibility by @laravel-shift in https://github.com/spatie/filament-markdown-editor/pull/34
+
+### New Contributors
+
+* @laravel-shift made their first contribution in https://github.com/spatie/filament-markdown-editor/pull/34
+
+**Full Changelog**: https://github.com/spatie/filament-markdown-editor/compare/2.0.0...2.0.1
+
 ## 2.0.0 - 2024-04-01
 
 ### What's Changed
