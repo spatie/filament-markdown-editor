@@ -22,8 +22,10 @@ jobs:
         include:
           - laravel: 12.*
             testbench: 10.*
+            filament: ^3.0
           - laravel: 13.*
             testbench: 11.*
+            filament: ^5.2
         exclude:
           - laravel: 13.*
             php: 8.2
@@ -48,7 +50,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
+          composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" "filament/filament:${{ matrix.filament }}" --no-interaction --no-update
           composer update --${{ matrix.stability }} --prefer-dist --no-interaction
 
       - name: List Installed Dependencies
