@@ -12,7 +12,7 @@ The Markdown field is powered by [EasyMDE](https://github.com/Ionaru/easy-markdo
 
 ## Support us
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/filament-markdown-editor.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/filament-markdown-editor)
+[<img src="https://spatie.be/github-ad-image/filament-markdown-editor.jpg" width="419px" />](https://spatie.be/github-ad-click/filament-markdown-editor)
 
 We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
 
